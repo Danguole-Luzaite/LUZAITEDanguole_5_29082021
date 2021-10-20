@@ -1,0 +1,29 @@
+.footers{
+    a {
+        color: $footers-color-grey;
+    }
+} 
+.footers{
+    p {
+        color: $footers-color-grey;
+    }
+    ul {
+        line-height:30px;
+    }
+} 
+#social-fb:hover {
+     color: $footers-socials-hovercolor;
+     transition:all .001s;
+ }
+ #social-tw:hover {
+     color: $footers-socials-hovercolor;
+     transition:all .001s;
+ }
+ #social-gp:hover {
+     color: $footers-socials-hovercolor;
+     transition:all .001s;
+ }
+ #social-em:hover {
+     color: $footers-socials-hovercolor;
+     transition:all .001s;
+ }

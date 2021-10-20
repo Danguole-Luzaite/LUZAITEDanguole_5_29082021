@@ -1,0 +1,98 @@
+h2 {
+  font-size: 1.5rem;
+}
+
+header nav a .accueil {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footers a {
+  color: #696969;
+}
+
+.footers p {
+  color: #696969;
+}
+.footers ul {
+  line-height: 30px;
+}
+
+#social-fb:hover {
+  color: #4099FF;
+  transition: all 0.001s;
+}
+
+#social-tw:hover {
+  color: #4099FF;
+  transition: all 0.001s;
+}
+
+#social-gp:hover {
+  color: #4099FF;
+  transition: all 0.001s;
+}
+
+#social-em:hover {
+  color: #4099FF;
+  transition: all 0.001s;
+}
+
+/* Block "Formulaire"*/
+.form-box {
+  min-height: 429px;
+}
+
+.card__oak-chair {
+  width: 348px;
+  height: 232px;
+  object-fit: contain;
+}
+.card .card-image-top {
+  height: 287px;
+}
+
+.container__product-details {
+  min-height: 405px;
+}
+.container__product-details .product-image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.container__product-details .product-image-chair {
+  height: 62%;
+}
+.container__product-details .product-name {
+  border-bottom: grey 1px dotted;
+}
+.container__product-details .product-name-width {
+  width: 50%;
+}
+
+.btn-width {
+  width: 90%;
+}
+
+.form-control-width {
+  display: inline-block;
+  min-width: 56px;
+  max-width: 80px;
+}
+
+.img-thumbnail {
+  max-width: 100px;
+}
+
+.total-price {
+  font-size: 1.3rem;
+}
+
+.contacts-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style.css.map */

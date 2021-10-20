@@ -1,0 +1,11 @@
+// cards de produits
+.card{
+    &__oak-chair{
+        width: 348px;
+        height: 232px;
+        object-fit: contain;
+    }
+    .card-image-top{
+        height: 287px;
+    }
+}

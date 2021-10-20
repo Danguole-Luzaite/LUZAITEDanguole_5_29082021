@@ -1,0 +1,13 @@
+@import "./utils/variable_overrides";
+@import "./utils/mixin_overrides";
+//@import "../node_modules/bootstrap/scss";//
+@import "./vendors/bootstrap";
+@import "./base/fonts";
+@import "./components/buttons";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/form";
+@import "./pages/liste-de-produits";
+@import "./pages/page-de-produit";
+@import "./pages/panier";
+@import "./pages/page-de-confirmation";

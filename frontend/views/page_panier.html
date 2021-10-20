@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+         <!-- Meta tags -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <!-- bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- link to css-->
+        <link rel="stylesheet" href="/frontend/assets/css/style.css">
+        <script src="https://kit.fontawesome.com/dd84544794.js" crossorigin="anonymous"></script>
+        <title>Panier</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light px-lg-5">
+                <a class="navbar-brand" href="/frontend/index.html">
+                    <!--insert logo-->
+                    <img src="/frontend/assets/images/orinoco_logo.png" width="149" height="64" alt="image du logo orinoco">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_nav">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar_nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a href="/frontend/index.html" class="accueil nav-link">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Meubles en chêne</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Ours en peluche</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Caméras vintage</a>
+                        </li>
+                    </ul>
+                </div>  
+            </nav>
+        </header>
+
+        <main>
+            <!--Block "Panier"-->
+            <h1 class="text-center mt-3 mb-3">Panier</h1>
+            <div class="container block-panier">
+                <table class="table table-hover">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Nr.</th> <!--nr. de produit-->
+                            <th scope="col"></th> <!--image-->
+                            <th scope="col">Produit</th> <!--product description-->
+                            <th scope="col">Quantité</th>
+                            <th scope="col">Prix total</th>
+                            <th scope="col"></th> <!--button "supprimer"-->
+                        </tr>
+                    </thead>
+                    <tbody id="shopping-card-tablebody">
+
+<!--
+                        <tr>
+-->
+                             <!--Product 1 row-->
+<!--
+                            <th scope="row">1</th>
+                            <td>
+                                <img class="img-thumbnail img-fluid" src="/frontend/assets/images/oak_1.jpg" alt="Table croisé">
+                            </td>
+                            <td>
+                                <h5>Table croisé</h5>
+                                <small class="text-muted">id: 5be9cc611c9d440000c1421e</small>
+                            </td>
+                            
+                            <td> 
+-->
+                                <!--Quantité-->
+<!--
+                                <select class="form-control"> 
+                                    <option>1</option>
+                                    <option>2</option>	
+                                    <option>3</option>	
+                                    <option>4</option>	
+                                </select> 
+                            </td>
+                            <td> 
+-->
+                                <!--Prix total-->
+<!--
+                                <div>59900 &euro;</div>
+                            </td> 
+                            <td> 
+-->
+                                <!--button "supprimer"-->
+<!--
+                                <button class="btn btn-outline-danger" type="button">x Supprimer</button>
+                            </td> 
+                        </tr>
+-->
+
+                    </tbody>
+                </table>
+
+                <!--Grand Total-->
+                <div class=" row total-price bg-light p-3" id="grand-total">
+<!--
+                    <div class="col">
+                        <span class="mr-3 font-weight-bold">Somme totale:</span>
+                    </div>
+
+
+                    <form id="" action="" method="POST" class="col">
+                        <button type="submit" class="btn btn-lg px-5 float-right btn-outline-primary">Commander</button>
+                    </form>
+-->                    
+                </div>
+                
+            </div>
+
+             <!--Block "Formulaire"-->
+            <div class="container form-box shadow mt-5 mb-5 pb-4">
+                <h2 class="mt-3 mb-3 py-3">Formulaire</h2>
+                <form action="/" method="post">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="surname">Nom</label>
+                            <input type="text" class="form-control" id="surname" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="city">Ville</label>
+                            <input type="text" class="form-control" id="city" placeholder="Votre ville" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Prénom</label>
+                            <input type="text" class="form-control" id="name" placeholder="Votre prénom" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail">E-mail</label>
+                            <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Votre e-mail" 
+                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Adresse</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Votre adresse" required>
+                    </div>
+                    <div id="order-submit-button" class="form-row float-right my-2 py-2">
+<!--
+                        <button type="submit" class="btn btn-lg px-5  btn-outline-primary">Commander</button>
+-->                        
+                    </div>  
+                </form>
+            </div>
+        </main>
+        <script src="/frontend/assets/js/panier.js"></script> 
+    </body>
