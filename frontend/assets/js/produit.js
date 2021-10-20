@@ -192,7 +192,7 @@ function createProductPage() {
 
   //creation de élément a productButtonReturn
   const productButtonReturn=document.createElement("a");
-  productButtonReturn.href="/frontend/index.html";
+  productButtonReturn.href="../index.html";
   productButtonReturn.classList.add('btn', 'btn-outline-secondary', 'btn-width');
   productButtonReturn.role="button";
   productButtonReturn.innerText="Retourner";

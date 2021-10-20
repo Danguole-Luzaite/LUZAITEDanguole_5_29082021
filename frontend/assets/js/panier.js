@@ -275,7 +275,7 @@ function processOrderRequest(orderRequestDetails){
 				// pour enregistrer la réponse du serveur dans le stockage local
         localStorage.setItem('orderResponse', JSON.stringify(resp));
 				// appel la page de confirmation
-        window.location.assign("/frontend/views/page_de_confirmation.html");
+        window.location.assign("../views/page_de_confirmation.html");
 			}
 		).catch(function(err){
       console.log("error", err);
