@@ -57,7 +57,7 @@ function createCartTableRow(rowLineNumberString, chosenProduct){
   cartTableColumnQuantity.appendChild(productQuantitySelect);
 
   //creation des elements option productQuantitySelectOption, en utilisant la boucle pour créer jusqu'à 4 options pour la quantité
-  for (let i = 1; i < 5; i++){
+  for (let i = 1; i < 11; i++){
     const productQuantitySelectOption=document.createElement("option");
     productQuantitySelectOption.innerText=i.toString();
     productQuantitySelect.appendChild(productQuantitySelectOption);
@@ -281,7 +281,6 @@ function processOrderRequest(orderRequestDetails){
       console.log("error", err);
     });		
 };
-
 
 
 /*

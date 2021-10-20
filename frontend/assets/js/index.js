@@ -10,9 +10,7 @@ function createProduct(listProduct){
   for (index in listProduct){
     /* creation du lien qui englobe un produit */
     const linkProduct=document.createElement("a");
-    linkProduct.classList.add('col-12', 'col-sm-6', 'col-md-4', 'mb-3');
-    //linkProduct.href= "/frontend/views/pages de produit/page_de_produit-1cross_table.html" + "?id=" + listProduct._id;
-//    linkProduct.setAttribute("href", "/frontend/views/pages de produit/page_de_produit-1cross_table.html" + "?id=" + listProduct[index]._id);
+    linkProduct.classList.add('col-12', 'col-sm-6', 'col-md-4', 'mb-3');   
     linkProduct.setAttribute("href", "./views/page_de_produit.html");
     linkProduct.setAttribute("product-id", listProduct[index]._id);
     linkProduct.addEventListener('click', function(e){

@@ -100,14 +100,14 @@ function createProductPage() {
   productQuantityRow.appendChild(productQuantitySelect);
 
   //creation des elements option productQuantitySelectOption, en utilisant la boucle pour créer jusqu'à 4 options pour la quantité
-  for (let i = 1; i < 5; i++){
+  for (let i = 1; i < 11; i++){
     const productQuantitySelectOption=document.createElement("option");
     productQuantitySelectOption.innerText=i.toString();
     productQuantitySelect.appendChild(productQuantitySelectOption);
   };
-  // 
+  // pour afficher le nombre de quantité jusqu'à 10 dans le menu
   productQuantitySelect.selectedIndex=chosenProduct.quantity - 1;
-  //
+  //surveillez les changements lors de la sélection de la quantité de produit et le changement du prix total.
   productQuantitySelect.addEventListener('change', function(e){
       chosenProduct.quantity=productQuantitySelect.selectedIndex + 1;
       chosenProduct.totalPrice=chosenProduct.price * chosenProduct.quantity;
@@ -170,7 +170,7 @@ function createProductPage() {
   //creation de élément div statusProductCart pour afficher le statut de produit dans le panier
   const statusProductCart=document.createElement("div");
   statusProductCart.classList.add('col-6', 'col-sm-6', 'text-danger', 'pt-2');
-  //
+  //si le produit est dans le panier, affiche l'élément div statusProductCart sur la page avec le message l'informant
   if(checkCurrentProductInCart()){
     statusProductCart.innerText="Produit déjà dans le panier";
   }else{
@@ -210,7 +210,7 @@ function createProductPage() {
   productButtonAjouter.classList.add('btn', 'btn-outline-primary', 'btn-width');
   productButtonAjouter.innerText="Ajouter au panier";
   productButtonAjouter.disabled=checkCurrentProductInCart();
-  //
+  //en cliquant sur le bouton "ajouter au panier", ajoute le produit choisi au panier et recharge la page.
   productButtonAjouter.addEventListener('click', function(e){
     addProductToCart(chosenProduct);
     location.reload();
